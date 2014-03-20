@@ -10,8 +10,9 @@
 
 @implementation PCSAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    NSLog(@"Hi, I'm a book create for a sample application.");
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    NSLog(@"Hi, I'm a sample application for a book.");
     return YES;
 }
 
