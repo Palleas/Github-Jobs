@@ -18,7 +18,12 @@
 @implementation PCSViewController
 
 - (void)viewWillAppear:(BOOL)animated {
+#if DEBUG
+    NSURL *url = [NSURL URLWithString: @"https://127.0.0.1/positions.json?description=ios&location=NY"];
+#else
     NSURL *url = [NSURL URLWithString: @"https://jobs.github.com/positions.json?description=ios&location=NY"];
+#endif
+
     NSURLSessionDataTask *jobTask = [[NSURLSession sharedSession] dataTaskWithURL: url
                                                                 completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                                                                     if (error) {

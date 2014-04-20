@@ -12,6 +12,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSString *endpoint = [[NSBundle bundleForClass: [self class]] infoDictionary][@"GithubJobsEndpoint"];
+    NSLog(@"Endpoint = %@", endpoint);
+
     NSLog(@"Hi, I'm a sample application for a book.");
     return YES;
 }

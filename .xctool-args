@@ -1,0 +1,5 @@
+[
+	"-workspace", "Github Jobs.xcworkspace",
+	"-scheme", "Github Jobs",
+	"-configuration", "Adhoc"
+]
