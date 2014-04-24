@@ -21,7 +21,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>2</string>
+	<string>1.2.3</string>
 	<key>GithubJobsEndpoint</key>
 	<string>$(GITHUB_JOBS_ENDPOINT)</string>
 	<key>LSRequiresIPhoneOS</key>

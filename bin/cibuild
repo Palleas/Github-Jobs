@@ -1,0 +1,21 @@
+
+set -e
+
+WORKSPACE="Github Jobs.xcworkspace"
+SCHEME="Github Jobs"
+BUILD_DIR="$(pwd)/build"
+CONFIGURATION="AdHoc"
+
+echo $PASSWORD
+
+ARCHIVE_FILENAME="Github Jobs.app"
+IPA_FILENAME="Github Jobs.ipa"
+
+security unlock-keychain -p $PASSWORD $HOME/Library/Keychains/login.keychain
+
+pod install
+
+xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -configuration  CONFIGURATION_BUILD_DIR="$BUILD_DIR" clean build | xcpretty -c
+
+xcrun -sdk iphoneos PackageApplication "$BUILD_DIR/$ARCHIVE_FILENAME" -o "$BUILD_DIR/$IPA_FILENAME" 
+
