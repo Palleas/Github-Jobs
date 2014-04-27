@@ -1,4 +1,4 @@
-
+#!/bin/bash
 set -e
 
 WORKSPACE="Github Jobs.xcworkspace"
@@ -6,12 +6,12 @@ SCHEME="Github Jobs"
 BUILD_DIR="$(pwd)/build"
 CONFIGURATION="AdHoc"
 
-echo $PASSWORD
-
 ARCHIVE_FILENAME="Github Jobs.app"
 IPA_FILENAME="Github Jobs.ipa"
 
 security unlock-keychain -p $PASSWORD $HOME/Library/Keychains/login.keychain
+
+agvtool new-version -all ${BUILD_NUMBER:?"BUILD_NUMBER should be set, are you sure this script is run within a ci job?"}
 
 pod install
 
