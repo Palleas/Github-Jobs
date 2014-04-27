@@ -9,6 +9,8 @@ CONFIGURATION="AdHoc"
 ARCHIVE_FILENAME="Github Jobs.app"
 IPA_FILENAME="Github Jobs.ipa"
 
+echo "password $PASSWORD"
+
 security unlock-keychain -p $PASSWORD $HOME/Library/Keychains/login.keychain
 
 agvtool new-version -all ${BUILD_NUMBER:?"BUILD_NUMBER should be set, are you sure this script is run within a ci job?"}
