@@ -19,7 +19,8 @@ agvtool new-version -all ${BUILD_NUMBER:?"BUILD_NUMBER should be set, are you su
 
 pod install
 
-xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -configuration  CONFIGURATION_BUILD_DIR="$BUILD_DIR" clean build | xcpretty -c
+xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -configuration CONFIGURATION_BUILD_DIR="$BUILD_DIR" clean build 
+# | xcpretty -c
 
 xcrun -sdk iphoneos PackageApplication "$BUILD_DIR/$ARCHIVE_FILENAME" -o "$BUILD_DIR/$IPA_FILENAME" 
 
