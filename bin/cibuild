@@ -10,7 +10,7 @@ CONFIGURATION="AdHoc"
 ARCHIVE_FILENAME="Github Jobs.app"
 IPA_FILENAME="Github Jobs.ipa"
 
-echo "Build dir is $BUILD_DIR"
+
 echo "password $PASSWORD"
 
 security unlock-keychain -p $PASSWORD $HOME/Library/Keychains/login.keychain
@@ -19,8 +19,7 @@ agvtool new-version -all ${BUILD_NUMBER:?"BUILD_NUMBER should be set, are you su
 
 pod install
 
-xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -configuration CONFIGURATION_BUILD_DIR="$BUILD_DIR" clean build 
-# | xcpretty -c
+xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -configuration $CONFIGURATION CONFIGURATION_BUILD_DIR="$BUILD_DIR" clean build | xcpretty -c
 
 xcrun -sdk iphoneos PackageApplication "$BUILD_DIR/$ARCHIVE_FILENAME" -o "$BUILD_DIR/$IPA_FILENAME" 
 
