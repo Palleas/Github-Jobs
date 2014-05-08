@@ -16,6 +16,9 @@
     NSLog(@"Endpoint = %@", endpoint);
 
     NSLog(@"Hi, I'm a sample application for a book.");
+
+    [[UINavigationBar appearance] setTitleTextAttributes: @{NSForegroundColorAttributeName: [UIColor greenColor]}];
+
     return YES;
 }
 
