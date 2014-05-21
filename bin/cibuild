@@ -5,7 +5,7 @@ WORKSPACE="Github Jobs.xcworkspace"
 SCHEME="Github Jobs"
 BUILD_DIR="$(pwd)/build"
 CONFIGURATION="Adhoc"
-ARCHIVE_FILENAME="GithubJobs.app"
+ARCHIVE_FILENAME="Github Jobs.app"
 IPA_FILENAME="GithubJobs.ipa"
 
 security unlock-keychain -p $PASSWORD $HOME/Library/Keychains/login.keychain
