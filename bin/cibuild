@@ -4,7 +4,7 @@ set -e
 WORKSPACE="Github Jobs.xcworkspace"
 SCHEME="Github Jobs"
 BUILD_DIR="$(pwd)/build"
-CONFIGURATION="AdHoc"
+CONFIGURATION="Adhoc"
 ARCHIVE_FILENAME="Github Jobs.app"
 IPA_FILENAME="Github Jobs.ipa"
 
