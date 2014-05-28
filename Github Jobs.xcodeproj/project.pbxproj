@@ -216,6 +216,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Perfectly Cooked";
 				TargetAttributes = {
+					621B2AA918D63B830066357D = {
+						DevelopmentTeam = 24BQCVN9W2;
+					};
 					621B2ACA18D63B830066357D = {
 						TestTargetID = 621B2AA918D63B830066357D;
 					};
@@ -435,14 +438,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 14;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Github Jobs/Github Jobs-Prefix.pch";
 				INFOPLIST_FILE = "Github Jobs/Github Jobs-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5986F7E1-8775-43C0-842A-2C529F8D099F";
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
@@ -454,11 +457,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 14;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Github Jobs/Github Jobs-Prefix.pch";
 				INFOPLIST_FILE = "Github Jobs/Github Jobs-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5986F7E1-8775-43C0-842A-2C529F8D099F";
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
@@ -553,6 +558,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 14;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
