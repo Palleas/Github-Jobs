@@ -12,7 +12,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
+    NSLog(@"Hi, I’m a book created for a sample application");
 
     return YES;
 }
