@@ -445,7 +445,7 @@
 				GCC_PREFIX_HEADER = "Github Jobs/Github Jobs-Prefix.pch";
 				INFOPLIST_FILE = "Github Jobs/Github Jobs-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5986F7E1-8775-43C0-842A-2C529F8D099F";
+				PROVISIONING_PROFILE = "";
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
@@ -463,7 +463,7 @@
 				GCC_PREFIX_HEADER = "Github Jobs/Github Jobs-Prefix.pch";
 				INFOPLIST_FILE = "Github Jobs/Github Jobs-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5986F7E1-8775-43C0-842A-2C529F8D099F";
+				PROVISIONING_PROFILE = "";
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
@@ -566,7 +566,7 @@
 				GCC_PREFIX_HEADER = "Github Jobs/Github Jobs-Prefix.pch";
 				INFOPLIST_FILE = "Github Jobs/Github Jobs-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "220C65F1-0BAF-4A6F-AE5A-B96F5600DBA8";
+				PROVISIONING_PROFILE = "";
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
