@@ -12,6 +12,6 @@
 
 @property (nonatomic, copy) NSDictionary *includedServices;
 
-- (BOOL)willMakeYouHappy;
+//- (BOOL)willMakeYouHappy;
 
 @end
