@@ -10,7 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "export PATH=/usr/local/bin/:$PATH&#10;&#10;echo &quot;Setting locale&quot; &gt;&gt; &quot;./xcode-log-wtf.log&quot;&#10;export LC_ALL=&quot;en_US.UTF-8&quot;&#10;echo &quot;Locale set&quot; &gt;&gt; &quot;./xcode-log-wtf.log&quot;&#10;&#10;echo &quot;Setting up rbenv&quot; &gt;&gt; &quot;./xcode-log-wtf.log&quot;&#10;eval &quot;$(rbenv init -)&quot; &amp;&gt; &quot;./xcode-log-wtf.log&quot;&#10;echo &quot;rbenv is set&quot; &gt;&gt; &quot;./xcode-log-wtf.log&quot;&#10;&#10;cd &quot;$SRCROOT&quot;&#10;pod install &amp;&gt; &quot;./xcode-log-wtf.log&quot;"
+               scriptText = "export PATH=/usr/local/bin/:$PATH&#10;&#10;echo &quot;Setting locale&quot; &gt;&gt; &quot;./xcode-log-wtf.log&quot;&#10;export LC_ALL=&quot;en_US.UTF-8&quot;&#10;echo &quot;Locale set&quot; &gt;&gt; &quot;./xcode-log-wtf.log&quot;&#10;&#10;echo &quot;Setting up rbenv&quot; &gt;&gt; &quot;./xcode-log-wtf.log&quot;&#10;eval &quot;$(rbenv init -)&quot; &amp;&gt; &quot;./xcode-log-wtf.log&quot;&#10;gem install cocoapods &gt;&gt; &quot;./xcode-log-wtf.log&quot;&#10;rbenv rehash&#10;&#10;echo &quot;rbenv is set&quot; &gt;&gt; &quot;./xcode-log-wtf.log&quot;&#10;&#10;cd &quot;$SRCROOT&quot;&#10;pod install &amp;&gt; &quot;./xcode-log-wtf.log&quot;"
                shellToInvoke = "/bin/bash">
                <EnvironmentBuildable>
                   <BuildableReference
