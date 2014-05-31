@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0510"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "export PATH=/usr/local/bin/:$PATH&#10;export LC_ALL=&quot;en_US.UTF-8&quot;&#10;&#10;LOG_FILE=&quot;$SRCROOT/build/xcodebuild-pre-action.log&quot;&#10;&#10;eval &quot;$(rbenv init -)&quot; &amp;&gt; &quot;$LOG_FILE&quot;&#10;cd &quot;$SRCROOT&quot;&#10;pod update &amp;&gt; &quot;$LOG_FILE&quot;&#10;&#10;echo &quot;coucou&quot; &gt; &quot;/Users/Palleas/Projects/Apress/Github Jobs/build/xcodebuild-pre-action.log&quot;&#10;"
+               shellToInvoke = "/bin/bash">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "621B2AA918D63B830066357D"
+                     BuildableName = "Github Jobs.app"
+                     BlueprintName = "Github Jobs"
+                     ReferencedContainer = "container:Github Jobs.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "621B2AA918D63B830066357D"
+               BuildableName = "Github Jobs.app"
+               BlueprintName = "Github Jobs"
+               ReferencedContainer = "container:Github Jobs.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "621B2ACA18D63B830066357D"
+               BuildableName = "Github JobsTests.xctest"
+               BlueprintName = "Github JobsTests"
+               ReferencedContainer = "container:Github Jobs.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "621B2AA918D63B830066357D"
+            BuildableName = "Github Jobs.app"
+            BlueprintName = "Github Jobs"
+            ReferencedContainer = "container:Github Jobs.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </TestAction>
+   <LaunchAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "621B2AA918D63B830066357D"
+            BuildableName = "Github Jobs.app"
+            BlueprintName = "Github Jobs"
+            ReferencedContainer = "container:Github Jobs.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "621B2AA918D63B830066357D"
+            BuildableName = "Github Jobs.app"
+            BlueprintName = "Github Jobs"
+            ReferencedContainer = "container:Github Jobs.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Adhoc"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
