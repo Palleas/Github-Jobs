@@ -10,7 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "export PATH=/usr/local/bin/:$PATH&#10;export LC_ALL=&quot;en_US.UTF-8&quot;&#10;cd &quot;$SRCROOT&quot;&#10;pod install 2&gt;&amp;1 &gt;  &quot;./xcode-log-wtf.log&quot;&#10;pod update 2&gt;&amp;1 &gt;  &quot;./xcode-log-wtf.log&quot;&#10;"
+               scriptText = "export PATH=/usr/local/bin/:$PATH&#10;export LC_ALL=&quot;en_US.UTF-8&quot;&#10;cd &quot;$SRCROOT&quot;&#10;pod install 2&gt;&amp;1 &gt;  &quot;./xcode-scheme-pre-build.log&quot;&#10;pod update 2&gt;&amp;1 &gt;  &quot;./xcode-scheme-pre-build.log&quot;&#10;"
                shellToInvoke = "/bin/bash">
                <EnvironmentBuildable>
                   <BuildableReference
