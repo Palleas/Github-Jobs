@@ -10,4 +10,15 @@
 
 @implementation PCSJobOffer
 
+- (instancetype)initWithPayload:(NSDictionary *)payload {
+    self = [super init];
+    if (self) {
+        self.title = payload[@"title"];
+        self.url = [NSURL URLWithString: payload[@"url"]];
+        self.location = payload[@"location"];
+    }
+
+    return self;
+}
+
 @end

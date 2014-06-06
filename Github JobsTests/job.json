@@ -1,0 +1,13 @@
+{
+    "url": "http://jobs.github.com/positions/abced-fghij-klmnop-1234567",
+    "company_logo": "http://github-jobs.s3.amazonaws.com/abced-fghij-klmnop.png",
+    "company_url": "http://our-company.com",
+    "id": "abced-fghij-klmnop-1234567",
+    "created_at": "Wed Jun 04 20:06:50 UTC 2014",
+    "title": "iOS developer",
+    "location": "Bay Area, CA",
+    "type": "Full Time",
+    "description": "Our company is awesome.",
+    "how_to_apply": "Email your resume to jobs@company.com",
+    "company": "Genee, Inc."
+}

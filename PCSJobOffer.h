@@ -12,7 +12,8 @@
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *location;
-@property (nonatomic, strong) NSDate *date;
 @property (nonatomic, strong) NSURL *url;
+
+- (instancetype)initWithPayload:(NSDictionary *)payload;
 
 @end
