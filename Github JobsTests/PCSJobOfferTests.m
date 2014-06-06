@@ -1,18 +1,20 @@
 //
-//  Github_JobsTests.m
-//  Github JobsTests
+//  PCSJobOfferTests.m
+//  Github Jobs
 //
-//  Created by Romain Pouclet on 2014-03-16.
+//  Created by Romain Pouclet on 2014-06-05.
 //  Copyright (c) 2014 Perfectly Cooked. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface Github_JobsTests : XCTestCase
+@interface PCSJobOfferTests : XCTestCase
+
+@property (nonatomic, copy) NSDictionary *jobPayload;
 
 @end
 
-@implementation Github_JobsTests
+@implementation PCSJobOfferTests
 
 - (void)setUp
 {

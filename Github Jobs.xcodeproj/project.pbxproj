@@ -21,9 +21,10 @@
 		621B2ACE18D63B830066357D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621B2AAD18D63B830066357D /* Foundation.framework */; };
 		621B2ACF18D63B830066357D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621B2AB118D63B830066357D /* UIKit.framework */; };
 		621B2AD718D63B830066357D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 621B2AD518D63B830066357D /* InfoPlist.strings */; };
-		621B2AD918D63B830066357D /* Github_JobsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 621B2AD818D63B830066357D /* Github_JobsTests.m */; };
 		624A271718E39DD700A5B360 /* PCSGithubJob.m in Sources */ = {isa = PBXBuildFile; fileRef = 624A271618E39DD700A5B360 /* PCSGithubJob.m */; };
-		624A271918E39E1200A5B360 /* PCSGithubJobTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 624A271818E39E1200A5B360 /* PCSGithubJobTests.m */; };
+		6273A0A319413B0300D3C722 /* PCSJobOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6273A0A219413B0300D3C722 /* PCSJobOffer.m */; };
+		6273A0A719414BEA00D3C722 /* PCSJobOfferTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6273A0A619414BEA00D3C722 /* PCSJobOfferTests.m */; };
+		6273A0A919414FF000D3C722 /* job.json in Resources */ = {isa = PBXBuildFile; fileRef = 6273A0A819414FF000D3C722 /* job.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +57,12 @@
 		621B2ACC18D63B830066357D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		621B2AD418D63B830066357D /* Github JobsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Github JobsTests-Info.plist"; sourceTree = "<group>"; };
 		621B2AD618D63B830066357D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		621B2AD818D63B830066357D /* Github_JobsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Github_JobsTests.m; sourceTree = "<group>"; };
 		624A271518E39DD700A5B360 /* PCSGithubJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCSGithubJob.h; sourceTree = "<group>"; };
 		624A271618E39DD700A5B360 /* PCSGithubJob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCSGithubJob.m; sourceTree = "<group>"; };
-		624A271818E39E1200A5B360 /* PCSGithubJobTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCSGithubJobTests.m; sourceTree = "<group>"; };
+		6273A0A119413B0300D3C722 /* PCSJobOffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PCSJobOffer.h; path = ../PCSJobOffer.h; sourceTree = "<group>"; };
+		6273A0A219413B0300D3C722 /* PCSJobOffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PCSJobOffer.m; path = ../PCSJobOffer.m; sourceTree = "<group>"; };
+		6273A0A619414BEA00D3C722 /* PCSJobOfferTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCSJobOfferTests.m; sourceTree = "<group>"; };
+		6273A0A819414FF000D3C722 /* job.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = job.json; sourceTree = "<group>"; };
 		E8F09569F1064065ABC23402 /* libPods-Github Jobs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Github Jobs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -123,6 +126,8 @@
 		621B2AB318D63B830066357D /* Github Jobs */ = {
 			isa = PBXGroup;
 			children = (
+				6273A0A119413B0300D3C722 /* PCSJobOffer.h */,
+				6273A0A219413B0300D3C722 /* PCSJobOffer.m */,
 				621B2ABC18D63B830066357D /* PCSAppDelegate.h */,
 				621B2ABD18D63B830066357D /* PCSAppDelegate.m */,
 				621B2ABF18D63B830066357D /* Main.storyboard */,
@@ -150,9 +155,9 @@
 		621B2AD218D63B830066357D /* Github JobsTests */ = {
 			isa = PBXGroup;
 			children = (
-				621B2AD818D63B830066357D /* Github_JobsTests.m */,
+				6273A0A819414FF000D3C722 /* job.json */,
 				621B2AD318D63B830066357D /* Supporting Files */,
-				624A271818E39E1200A5B360 /* PCSGithubJobTests.m */,
+				6273A0A619414BEA00D3C722 /* PCSJobOfferTests.m */,
 			);
 			path = "Github JobsTests";
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				621B2AD718D63B830066357D /* InfoPlist.strings in Resources */,
+				6273A0A919414FF000D3C722 /* job.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +312,7 @@
 				624A271718E39DD700A5B360 /* PCSGithubJob.m in Sources */,
 				621B2ABA18D63B830066357D /* main.m in Sources */,
 				621B2ABE18D63B830066357D /* PCSAppDelegate.m in Sources */,
+				6273A0A319413B0300D3C722 /* PCSJobOffer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,8 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				621B2AD918D63B830066357D /* Github_JobsTests.m in Sources */,
-				624A271918E39E1200A5B360 /* PCSGithubJobTests.m in Sources */,
+				6273A0A719414BEA00D3C722 /* PCSJobOfferTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
