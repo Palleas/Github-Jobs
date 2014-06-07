@@ -7,6 +7,8 @@
 //
 
 #import "PCSViewController.h"
+#import "PCSJobOffer.h"
+
 #import <SVProgressHUD/SVProgressHUD.h>
 
 @interface PCSViewController ()
@@ -35,9 +37,19 @@
                                                                     }
 
                                                                     NSError *jsonError = nil;
-                                                                    self.jobs = [NSJSONSerialization JSONObjectWithData: data
+
+
+
+                                                                    NSArray *results = [NSJSONSerialization JSONObjectWithData: data
                                                                                                                 options: 0
                                                                                                                   error: &jsonError];
+                                                                    NSMutableArray *jobs = [NSMutableArray array];
+                                                                    [results enumerateObjectsUsingBlock:^(NSDictionary *jobPayload, NSUInteger idx, BOOL *stop) {
+                                                                        [jobs addObject: [[PCSJobOffer alloc] initWithPayload: jobPayload]];
+                                                                    }];
+
+                                                                    self.jobs = jobs;
+
                                                                     dispatch_async(dispatch_get_main_queue(), ^{
                                                                         [SVProgressHUD showSuccessWithStatus: [NSString stringWithFormat: @"%lu jobs fetched", (unsigned long)[self.jobs count]] ];
                                                                         [self.tableView reloadData];
@@ -61,8 +73,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    PCSJobOffer *offer = self.jobs[indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    cell.textLabel.text = self.jobs[indexPath.row][@"title"];
+    cell.textLabel.text = offer.title;
 
     return cell;
 }
