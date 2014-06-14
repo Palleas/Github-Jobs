@@ -20,6 +20,8 @@
 @implementation PCSViewController
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear: animated];
+    
     NSURL *url = [NSURL URLWithString: @"https://jobs.github.com/positions.json?description=ios&location=NY"];
 
     NSURLSessionDataTask *jobTask = [[NSURLSession sharedSession] dataTaskWithURL: url
