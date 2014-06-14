@@ -13,7 +13,7 @@
 - (instancetype)initWithPayload:(NSDictionary *)payload {
     self = [super init];
     if (self) {
-        self.title = @"No job for you!"; //= payload[@"title"];
+        self.title = payload[@"title"];
         self.url = [NSURL URLWithString: payload[@"url"]];
         self.location = payload[@"location"];
     }
