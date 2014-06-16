@@ -19,6 +19,6 @@ if [[ ! -d $BUILD_DIR ]]; then
 fi
 
 
-xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -configuration "$CONFIGURATION" CONFIGURATION_BUILD_DIR="$BUILD_DIR" clean build | tee build/xcodebuild.log | xcpretty -c
+xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -configuration "$CONFIGURATION" CONFIGURATION_BUILD_DIR="$BUILD_DIR" clean build | tee "$BUILD_DIR/xcodebuild.log" | xcpretty -c
 
 xcrun -sdk iphoneos PackageApplication "$BUILD_DIR/$ARCHIVE_FILENAME" -o "$BUILD_DIR/$IPA_FILENAME" 
