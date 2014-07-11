@@ -453,6 +453,7 @@
 				INFOPLIST_FILE = "Github Jobs/Github Jobs-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "23C82F36-4BF2-4E0D-81B5-AD8586C5EAAF";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
@@ -472,6 +473,7 @@
 				INFOPLIST_FILE = "Github Jobs/Github Jobs-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				VALIDATE_PRODUCT = NO;
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
